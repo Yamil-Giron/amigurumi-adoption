@@ -1,0 +1,194 @@
+[debug] [2025-11-23T18:46:54.501Z] ----------------------------------------------------------------------
+[debug] [2025-11-23T18:46:54.502Z] Command:       /home/yamil/.nvm/versions/node/v22.21.1/bin/node /home/yamil/.nvm/versions/node/v22.21.1/bin/firebase init
+[debug] [2025-11-23T18:46:54.503Z] CLI Version:   14.26.0
+[debug] [2025-11-23T18:46:54.503Z] Platform:      linux
+[debug] [2025-11-23T18:46:54.503Z] Node Version:  v22.21.1
+[debug] [2025-11-23T18:46:54.503Z] Time:          Sun Nov 23 2025 15:46:54 GMT-0300 (hora de verano de Chile)
+[debug] [2025-11-23T18:46:54.503Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/yamil/Documentos/amazonas-app
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[debug] [2025-11-23T18:47:45.064Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-11-23T18:47:45.065Z] > authorizing via signed-in user (yamilgiron98@gmail.com)
+[debug] [2025-11-23T18:47:45.066Z] Checked if tokens are valid: true, expires at: 1763927193368
+[debug] [2025-11-23T18:47:45.066Z] Checked if tokens are valid: true, expires at: 1763927193368
+[debug] [2025-11-23T18:47:45.068Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-11-23T18:47:45.844Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-11-23T18:47:45.844Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] 
+=== Dataconnect Setup
+[info] i  dataconnect: ensuring required API firebasedataconnect.googleapis.com is enabled... 
+[debug] [2025-11-23T18:47:50.416Z] Checked if tokens are valid: true, expires at: 1763927193368
+[debug] [2025-11-23T18:47:50.416Z] Checked if tokens are valid: true, expires at: 1763927193368
+[info] i  dataconnect: ensuring required API sqladmin.googleapis.com is enabled... 
+[debug] [2025-11-23T18:47:50.417Z] Checked if tokens are valid: true, expires at: 1763927193368
+[debug] [2025-11-23T18:47:50.417Z] Checked if tokens are valid: true, expires at: 1763927193368
+[debug] [2025-11-23T18:47:50.417Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/adopcion-de-arboles/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-11-23T18:47:50.417Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/adopcion-de-arboles/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/adopcion-de-arboles
+[debug] [2025-11-23T18:47:50.418Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/adopcion-de-arboles/services/sqladmin.googleapis.com [none]
+[debug] [2025-11-23T18:47:50.418Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/adopcion-de-arboles/services/sqladmin.googleapis.com x-goog-quota-user=projects/adopcion-de-arboles
+[debug] [2025-11-23T18:47:51.496Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/adopcion-de-arboles/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-11-23T18:47:51.497Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/adopcion-de-arboles/services/firebasedataconnect.googleapis.com [omitted]
+[warn] ⚠  dataconnect: missing required API firebasedataconnect.googleapis.com. Enabling now... 
+[debug] [2025-11-23T18:47:51.498Z] Checked if tokens are valid: true, expires at: 1763927193368
+[debug] [2025-11-23T18:47:51.498Z] Checked if tokens are valid: true, expires at: 1763927193368
+[debug] [2025-11-23T18:47:51.498Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/adopcion-de-arboles/services/firebasedataconnect.googleapis.com:enable [none]
+[debug] [2025-11-23T18:47:51.498Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/adopcion-de-arboles/services/firebasedataconnect.googleapis.com:enable x-goog-quota-user=projects/adopcion-de-arboles
+[debug] [2025-11-23T18:47:51.500Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/adopcion-de-arboles/services/sqladmin.googleapis.com 200
+[debug] [2025-11-23T18:47:51.501Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/adopcion-de-arboles/services/sqladmin.googleapis.com [omitted]
+[warn] ⚠  dataconnect: missing required API sqladmin.googleapis.com. Enabling now... 
+[debug] [2025-11-23T18:47:51.501Z] Checked if tokens are valid: true, expires at: 1763927193368
+[debug] [2025-11-23T18:47:51.502Z] Checked if tokens are valid: true, expires at: 1763927193368
+[debug] [2025-11-23T18:47:51.502Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/adopcion-de-arboles/services/sqladmin.googleapis.com:enable [none]
+[debug] [2025-11-23T18:47:51.502Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/adopcion-de-arboles/services/sqladmin.googleapis.com:enable x-goog-quota-user=projects/adopcion-de-arboles
+[debug] [2025-11-23T18:47:51.879Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/adopcion-de-arboles/services/sqladmin.googleapis.com:enable 200
+[debug] [2025-11-23T18:47:51.880Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/adopcion-de-arboles/services/sqladmin.googleapis.com:enable [omitted]
+[debug] [2025-11-23T18:47:52.628Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/adopcion-de-arboles/services/firebasedataconnect.googleapis.com:enable 200
+[debug] [2025-11-23T18:47:52.628Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/adopcion-de-arboles/services/firebasedataconnect.googleapis.com:enable [omitted]
+[debug] [2025-11-23T18:48:02.637Z] Checked if tokens are valid: true, expires at: 1763927193368
+[debug] [2025-11-23T18:48:02.637Z] Checked if tokens are valid: true, expires at: 1763927193368
+[debug] [2025-11-23T18:48:02.638Z] >>> [apiv2][query] GET https://firebasedataconnect.googleapis.com/v1/projects/adopcion-de-arboles/locations/-/services [none]
+[debug] [2025-11-23T18:48:03.964Z] <<< [apiv2][status] GET https://firebasedataconnect.googleapis.com/v1/projects/adopcion-de-arboles/locations/-/services 200
+[debug] [2025-11-23T18:48:03.965Z] <<< [apiv2][body] GET https://firebasedataconnect.googleapis.com/v1/projects/adopcion-de-arboles/locations/-/services {}
+[debug] [2025-11-23T18:48:11.012Z] Checked if tokens are valid: true, expires at: 1763927193368
+[debug] [2025-11-23T18:48:11.012Z] Checked if tokens are valid: true, expires at: 1763927193368
+[debug] [2025-11-23T18:48:11.012Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/adopcion-de-arboles/billingInfo [none]
+[debug] [2025-11-23T18:48:11.960Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/adopcion-de-arboles/billingInfo 200
+[debug] [2025-11-23T18:48:11.960Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/adopcion-de-arboles/billingInfo {"name":"projects/adopcion-de-arboles/billingInfo","projectId":"adopcion-de-arboles","billingAccountName":"","billingEnabled":false}
+[debug] [2025-11-23T18:48:11.961Z] Checked if tokens are valid: true, expires at: 1763927193368
+[debug] [2025-11-23T18:48:11.961Z] Checked if tokens are valid: true, expires at: 1763927193368
+[debug] [2025-11-23T18:48:11.961Z] >>> [apiv2][query] GET https://monitoring.googleapis.com/v3/projects/adopcion-de-arboles/timeSeries/ filter=metric.type%3D%22serviceruntime.googleapis.com%2Fquota%2Fallocation%2Fusage%22+AND+metric.label.quota_metric+%3D+%22sqladmin.googleapis.com%2Ffdc_lifetime_free_trial_per_project%22&interval.endTime=2025-11-23T18%3A48%3A11.961Z&interval.startTime=2025-11-16T18%3A48%3A11.961Z
+[debug] [2025-11-23T18:48:12.771Z] <<< [apiv2][status] GET https://monitoring.googleapis.com/v3/projects/adopcion-de-arboles/timeSeries/ 200
+[debug] [2025-11-23T18:48:12.771Z] <<< [apiv2][body] GET https://monitoring.googleapis.com/v3/projects/adopcion-de-arboles/timeSeries/ {"unit":"1"}
+[info] ✔  dataconnect: Detected existing apps . (web) 
+[debug] [2025-11-23T18:48:12.793Z] Checked if tokens are valid: true, expires at: 1763927193368
+[debug] [2025-11-23T18:48:12.793Z] Checked if tokens are valid: true, expires at: 1763927193368
+[debug] [2025-11-23T18:48:12.793Z] >>> [apiv2][query] GET https://firebasedataconnect.googleapis.com/v1/projects/adopcion-de-arboles/locations/us-east4/services/amazonas-app/schemas pageSize=100&pageToken=&fields=schemas.name%2Cschemas.datasources%2Cschemas.source
+[debug] [2025-11-23T18:48:13.690Z] <<< [apiv2][status] GET https://firebasedataconnect.googleapis.com/v1/projects/adopcion-de-arboles/locations/us-east4/services/amazonas-app/schemas 404
+[debug] [2025-11-23T18:48:13.690Z] <<< [apiv2][body] GET https://firebasedataconnect.googleapis.com/v1/projects/adopcion-de-arboles/locations/us-east4/services/amazonas-app/schemas {"error":{"code":404,"message":"Resource 'services/amazonas-app' was not found","status":"NOT_FOUND","details":[{"@type":"type.googleapis.com/google.rpc.ResourceInfo","resourceName":"services/amazonas-app"}]}}
+[info] ✔  Wrote dataconnect/dataconnect.yaml 
+[info] ✔  Wrote dataconnect/seed_data.gql 
+[info] ✔  Wrote dataconnect/schema/schema.gql 
+[info] ✔  Wrote dataconnect/example/connector.yaml 
+[info] ✔  Wrote dataconnect/example/queries.gql 
+[info] ✔  Wrote dataconnect/example/mutations.gql 
+[info] ✔  Wrote dataconnect/example/connector.yaml 
+[info] i  dataconnect: Installing the generated SDKs ... 
+[info] i  dataconnect: downloading dataconnect-emulator-2.17.2... {"metadata":{"emulator":{"name":"dataconnect"},"message":"downloading dataconnect-emulator-2.17.2..."}}
+[debug] [2025-11-23T18:48:13.717Z] >>> [apiv2][query] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-linux-amd64-v2.17.2 
+[debug] [2025-11-23T18:48:13.993Z] <<< [apiv2][status] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-linux-amd64-v2.17.2 200
+[debug] [2025-11-23T18:48:13.993Z] <<< [apiv2][body] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-linux-amd64-v2.17.2 [stream]
+[debug] [2025-11-23T18:48:15.715Z] defaultcredentials: writing to file /home/yamil/.config/firebase/yamilgiron98_gmail_com_application_default_credentials.json
+[info] ✔  dataconnect: Installed generated SDKs for . (web) 
+[info] i  Visit https://firebase.google.com/docs/data-connect/web-sdk#react for more information on how to set up React Generated SDKs for Firebase Data Connect 
+[info] 
+=== Firestore Setup
+[info] i  firestore: ensuring required API firestore.googleapis.com is enabled... 
+[debug] [2025-11-23T18:48:19.836Z] Checked if tokens are valid: true, expires at: 1763927193368
+[debug] [2025-11-23T18:48:19.836Z] Checked if tokens are valid: true, expires at: 1763927193368
+[debug] [2025-11-23T18:48:19.837Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/adopcion-de-arboles/services/firestore.googleapis.com [none]
+[debug] [2025-11-23T18:48:19.837Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/adopcion-de-arboles/services/firestore.googleapis.com x-goog-quota-user=projects/adopcion-de-arboles
+[debug] [2025-11-23T18:48:20.857Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/adopcion-de-arboles/services/firestore.googleapis.com 200
+[debug] [2025-11-23T18:48:20.857Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/adopcion-de-arboles/services/firestore.googleapis.com [omitted]
+[warn] ⚠  firestore: missing required API firestore.googleapis.com. Enabling now... 
+[debug] [2025-11-23T18:48:20.857Z] Checked if tokens are valid: true, expires at: 1763927193368
+[debug] [2025-11-23T18:48:20.857Z] Checked if tokens are valid: true, expires at: 1763927193368
+[debug] [2025-11-23T18:48:20.858Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/adopcion-de-arboles/services/firestore.googleapis.com:enable [none]
+[debug] [2025-11-23T18:48:20.858Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/adopcion-de-arboles/services/firestore.googleapis.com:enable x-goog-quota-user=projects/adopcion-de-arboles
+[debug] [2025-11-23T18:48:21.266Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/adopcion-de-arboles/services/firestore.googleapis.com:enable 200
+[debug] [2025-11-23T18:48:21.266Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/adopcion-de-arboles/services/firestore.googleapis.com:enable [omitted]
+[debug] [2025-11-23T18:48:31.280Z] Checked if tokens are valid: true, expires at: 1763927193368
+[debug] [2025-11-23T18:48:31.280Z] Checked if tokens are valid: true, expires at: 1763927193368
+[debug] [2025-11-23T18:48:31.281Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/adopcion-de-arboles/databases [none]
+[debug] [2025-11-23T18:48:31.813Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/adopcion-de-arboles/databases 200
+[debug] [2025-11-23T18:48:31.814Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/adopcion-de-arboles/databases {}
+[debug] [2025-11-23T18:48:31.814Z] Checked if tokens are valid: true, expires at: 1763927193368
+[debug] [2025-11-23T18:48:31.814Z] Checked if tokens are valid: true, expires at: 1763927193368
+[debug] [2025-11-23T18:48:31.814Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/adopcion-de-arboles/locations [none]
+[debug] [2025-11-23T18:48:31.896Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/adopcion-de-arboles/locations 200
+[debug] [2025-11-23T18:48:31.897Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/adopcion-de-arboles/locations {"locations":[{"name":"projects/adopcion-de-arboles/locations/eur3","labels":{"appengine.googleapis.com/geo":"europe-west","cloud.googleapis.com/location":"eur3","cloud.googleapis.com/geo":"eur3"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"eur3","displayName":"Europe"},{"name":"projects/adopcion-de-arboles/locations/nam5","labels":{"appengine.googleapis.com/geo":"us-central","cloud.googleapis.com/location":"nam5","cloud.googleapis.com/geo":"nam5"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"nam5","displayName":"United States"},{"name":"projects/adopcion-de-arboles/locations/nam7","labels":{"cloud.googleapis.com/location":"nam7","cloud.googleapis.com/geo":"nam7"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"nam7","displayName":"United States"},{"name":"projects/adopcion-de-arboles/locations/africa-south1","labels":{"cloud.googleapis.com/location":"africa-south1","cloud.googleapis.com/region":"africa-south1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"africa-south1","displayName":"Johannesburg"},{"name":"projects/adopcion-de-arboles/locations/asia-east1","labels":{"appengine.googleapis.com/region":"asia-east1","cloud.googleapis.com/location":"asia-east1","cloud.googleapis.com/region":"asia-east1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"asia-east1","displayName":"Taiwan"},{"name":"projects/adopcion-de-arboles/locations/asia-east2","labels":{"appengine.googleapis.com/region":"asia-east2","cloud.googleapis.com/location":"asia-east2","cloud.googleapis.com/region":"asia-east2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"asia-east2","displayName":"Hong Kong"},{"name":"projects/adopcion-de-arboles/locations/asia-northeast1","labels":{"appengine.googleapis.com/region":"asia-northeast1","cloud.googleapis.com/location":"asia-northeast1","cloud.googleapis.com/region":"asia-northeast1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"asia-northeast1","displayName":"Tokyo"},{"name":"projects/adopcion-de-arboles/locations/asia-northeast2","labels":{"appengine.googleapis.com/region":"asia-northeast2","cloud.googleapis.com/location":"asia-northeast2","cloud.googleapis.com/region":"asia-northeast2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"asia-northeast2","displayName":"Osaka"},{"name":"projects/adopcion-de-arboles/locations/asia-northeast3","labels":{"appengine.googleapis.com/region":"asia-northeast3","cloud.googleapis.com/location":"asia-northeast3","cloud.googleapis.com/region":"asia-northeast3"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"asia-northeast3","displayName":"Seoul"},{"name":"projects/adopcion-de-arboles/locations/asia-south1","labels":{"appengine.googleapis.com/region":"asia-south1","cloud.googleapis.com/location":"asia-south1","cloud.googleapis.com/region":"asia-south1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"asia-south1","displayName":"Mumbai"},{"name":"projects/adopcion-de-arboles/locations/asia-south2","labels":{"cloud.googleapis.com/location":"asia-south2","cloud.googleapis.com/region":"asia-south2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"asia-south2","displayName":"Delhi"},{"name":"projects/adopcion-de-arboles/locations/asia-southeast1","labels":{"appengine.googleapis.com/region":"asia-southeast1","cloud.googleapis.com/location":"asia-southeast1","cloud.googleapis.com/region":"asia-southeast1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"asia-southeast1","displayName":"Singapore"},{"name":"projects/adopcion-de-arboles/locations/asia-southeast2","labels":{"appengine.googleapis.com/region":"asia-southeast2","cloud.googleapis.com/location":"asia-southeast2","cloud.googleapis.com/region":"asia-southeast2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"asia-southeast2","displayName":"Jakarta"},{"name":"projects/adopcion-de-arboles/locations/australia-southeast1","labels":{"appengine.googleapis.com/region":"australia-southeast1","cloud.googleapis.com/location":"australia-southeast1","cloud.googleapis.com/region":"australia-southeast1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"australia-southeast1","displayName":"Sydney"},{"name":"projects/adopcion-de-arboles/locations/australia-southeast2","labels":{"cloud.googleapis.com/location":"australia-southeast2","cloud.googleapis.com/region":"australia-southeast2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"australia-southeast2","displayName":"Melbourne"},{"name":"projects/adopcion-de-arboles/locations/europe-central2","labels":{"appengine.googleapis.com/region":"europe-central2","cloud.googleapis.com/location":"europe-central2","cloud.googleapis.com/region":"europe-central2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-central2","displayName":"Warsaw"},{"name":"projects/adopcion-de-arboles/locations/europe-north1","labels":{"cloud.googleapis.com/location":"europe-north1","cloud.googleapis.com/region":"europe-north1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-north1","displayName":"Finland"},{"name":"projects/adopcion-de-arboles/locations/europe-north2","labels":{"cloud.googleapis.com/location":"europe-north2","cloud.googleapis.com/region":"europe-north2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-north2","displayName":"Stockholm"},{"name":"projects/adopcion-de-arboles/locations/europe-southwest1","labels":{"cloud.googleapis.com/location":"europe-southwest1","cloud.googleapis.com/region":"europe-southwest1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-southwest1","displayName":"Madrid"},{"name":"projects/adopcion-de-arboles/locations/europe-west1","labels":{"cloud.googleapis.com/location":"europe-west1","cloud.googleapis.com/region":"europe-west1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-west1","displayName":"Belgium"},{"name":"projects/adopcion-de-arboles/locations/europe-west10","labels":{"cloud.googleapis.com/location":"europe-west10","cloud.googleapis.com/region":"europe-west10"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-west10","displayName":"Berlin"},{"name":"projects/adopcion-de-arboles/locations/europe-west12","labels":{"cloud.googleapis.com/location":"europe-west12","cloud.googleapis.com/region":"europe-west12"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-west12","displayName":"Turin"},{"name":"projects/adopcion-de-arboles/locations/europe-west2","labels":{"appengine.googleapis.com/region":"europe-west2","cloud.googleapis.com/location":"europe-west2","cloud.googleapis.com/region":"europe-west2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-west2","displayName":"London"},{"name":"projects/adopcion-de-arboles/locations/europe-west3","labels":{"appengine.googleapis.com/region":"europe-west3","cloud.googleapis.com/location":"europe-west3","cloud.googleapis.com/region":"europe-west3"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-west3","displayName":"Frankfurt"},{"name":"projects/adopcion-de-arboles/locations/europe-west4","labels":{"cloud.googleapis.com/location":"europe-west4","cloud.googleapis.com/region":"europe-west4"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-west4","displayName":"Netherlands"},{"name":"projects/adopcion-de-arboles/locations/europe-west6","labels":{"appengine.googleapis.com/region":"europe-west6","cloud.googleapis.com/location":"europe-west6","cloud.googleapis.com/region":"europe-west6"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-west6","displayName":"Zurich"},{"name":"projects/adopcion-de-arboles/locations/europe-west8","labels":{"cloud.googleapis.com/location":"europe-west8","cloud.googleapis.com/region":"europe-west8"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-west8","displayName":"Milan"},{"name":"projects/adopcion-de-arboles/locations/europe-west9","labels":{"cloud.googleapis.com/location":"europe-west9","cloud.googleapis.com/region":"europe-west9"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-west9","displayName":"Paris"},{"name":"projects/adopcion-de-arboles/locations/me-central1","labels":{"cloud.googleapis.com/location":"me-central1","cloud.googleapis.com/region":"me-central1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"me-central1","displayName":"Doha"},{"name":"projects/adopcion-de-arboles/locations/me-central2","labels":{"cloud.googleapis.com/location":"me-central2","cloud.googleapis.com/region":"me-central2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"me-central2","displayName":"Dammam"},{"name":"projects/adopcion-de-arboles/locations/me-west1","labels":{"cloud.googleapis.com/location":"me-west1","cloud.googleapis.com/region":"me-west1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"me-west1","displayName":"Tel Aviv"},{"name":"projects/adopcion-de-arboles/locations/northamerica-northeast1","labels":{"appengine.googleapis.com/region":"northamerica-northeast1","cloud.googleapis.com/location":"northamerica-northeast1","cloud.googleapis.com/region":"northamerica-northeast1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"northamerica-northeast1","displayName":"Montréal"},{"name":"projects/adopcion-de-arboles/locations/northamerica-northeast2","labels":{"cloud.googleapis.com/location":"northamerica-northeast2","cloud.googleapis.com/region":"northamerica-northeast2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"northamerica-northeast2","displayName":"Toronto"},{"name":"projects/adopcion-de-arboles/locations/northamerica-south1","labels":{"cloud.googleapis.com/location":"northamerica-south1","cloud.googleapis.com/region":"northamerica-south1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"northamerica-south1","displayName":"Mexico"},{"name":"projects/adopcion-de-arboles/locations/southamerica-east1","labels":{"appengine.googleapis.com/region":"southamerica-east1","cloud.googleapis.com/location":"southamerica-east1","cloud.googleapis.com/region":"southamerica-east1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"southamerica-east1","displayName":"São Paulo"},{"name":"projects/adopcion-de-arboles/locations/southamerica-west1","labels":{"cloud.googleapis.com/location":"southamerica-west1","cloud.googleapis.com/region":"southamerica-west1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"southamerica-west1","displayName":"Santiago"},{"name":"projects/adopcion-de-arboles/locations/us-central1","labels":{"cloud.googleapis.com/location":"us-central1","cloud.googleapis.com/region":"us-central1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"us-central1","displayName":"Iowa"},{"name":"projects/adopcion-de-arboles/locations/us-east1","labels":{"appengine.googleapis.com/region":"us-east1","cloud.googleapis.com/location":"us-east1","cloud.googleapis.com/region":"us-east1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"us-east1","displayName":"South Carolina"},{"name":"projects/adopcion-de-arboles/locations/us-east4","labels":{"appengine.googleapis.com/region":"us-east4","cloud.googleapis.com/location":"us-east4","cloud.googleapis.com/region":"us-east4"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"us-east4","displayName":"Northern Virginia"},{"name":"projects/adopcion-de-arboles/locations/us-east5","labels":{"cloud.googleapis.com/location":"us-east5","cloud.googleapis.com/region":"us-east5"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"us-east5","displayName":"Columbus"},{"name":"projects/adopcion-de-arboles/locations/us-south1","labels":{"cloud.googleapis.com/location":"us-south1","cloud.googleapis.com/region":"us-south1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"us-south1","displayName":"Dallas"},{"name":"projects/adopcion-de-arboles/locations/us-west1","labels":{"appengine.googleapis.com/region":"us-west1","cloud.googleapis.com/location":"us-west1","cloud.googleapis.com/region":"us-west1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"us-west1","displayName":"Oregon"},{"name":"projects/adopcion-de-arboles/locations/us-west2","labels":{"appengine.googleapis.com/region":"us-west2","cloud.googleapis.com/location":"us-west2","cloud.googleapis.com/region":"us-west2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"us-west2","displayName":"Los Angeles"},{"name":"projects/adopcion-de-arboles/locations/us-west3","labels":{"appengine.googleapis.com/region":"us-west3","cloud.googleapis.com/location":"us-west3","cloud.googleapis.com/region":"us-west3"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"us-west3","displayName":"Salt Lake City"},{"name":"projects/adopcion-de-arboles/locations/us-west4","labels":{"appengine.googleapis.com/region":"us-west4","cloud.googleapis.com/location":"us-west4","cloud.googleapis.com/region":"us-west4"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"us-west4","displayName":"Las Vegas"}]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2025-11-23T18:49:23.507Z] Checked if tokens are valid: true, expires at: 1763927193368
+[debug] [2025-11-23T18:49:23.507Z] Checked if tokens are valid: true, expires at: 1763927193368
+[debug] [2025-11-23T18:49:23.508Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/adopcion-de-arboles/releases pageSize=10&pageToken=
+[debug] [2025-11-23T18:49:24.547Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/adopcion-de-arboles/releases 200
+[debug] [2025-11-23T18:49:24.547Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/adopcion-de-arboles/releases {}
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2025-11-23T18:49:25.902Z] Checked if tokens are valid: true, expires at: 1763927193368
+[debug] [2025-11-23T18:49:25.902Z] Checked if tokens are valid: true, expires at: 1763927193368
+[debug] [2025-11-23T18:49:25.903Z] Checked if tokens are valid: true, expires at: 1763927193368
+[debug] [2025-11-23T18:49:25.903Z] Checked if tokens are valid: true, expires at: 1763927193368
+[debug] [2025-11-23T18:49:25.903Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/adopcion-de-arboles/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2025-11-23T18:49:25.904Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/adopcion-de-arboles/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2025-11-23T18:49:25.989Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/adopcion-de-arboles/databases/(default)/collectionGroups/-/indexes 404
+[debug] [2025-11-23T18:49:25.989Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/adopcion-de-arboles/databases/(default)/collectionGroups/-/indexes {"error":{"code":404,"message":"Project 'adopcion-de-arboles' or database '(default)' does not exist.","status":"NOT_FOUND"}}
+[info] ✔  Wrote firestore.rules 
+[info] ✔  Wrote firestore.indexes.json 
+[info] 
+=== Genkit Setup
+[debug] [2025-11-23T18:49:26.001Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/adopcion-de-arboles/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 404
+[debug] [2025-11-23T18:49:26.001Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/adopcion-de-arboles/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"error":{"code":404,"message":"Project 'adopcion-de-arboles' or database '(default)' does not exist.","status":"NOT_FOUND"}}
+[warn] ⚠  genkit: Stopped Genkit initialization 
+[info] 
+=== Functions Setup
+[debug] [2025-11-23T18:49:47.497Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-11-23T18:49:47.497Z] > authorizing via signed-in user (yamilgiron98@gmail.com)
+[debug] [2025-11-23T18:49:47.497Z] [iam] checking project adopcion-de-arboles for permissions ["firebase.projects.get"]
+[debug] [2025-11-23T18:49:47.497Z] Checked if tokens are valid: true, expires at: 1763927193368
+[debug] [2025-11-23T18:49:47.497Z] Checked if tokens are valid: true, expires at: 1763927193368
+[debug] [2025-11-23T18:49:47.497Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/adopcion-de-arboles:testIamPermissions [none]
+[debug] [2025-11-23T18:49:47.497Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/adopcion-de-arboles:testIamPermissions x-goog-quota-user=projects/adopcion-de-arboles
+[debug] [2025-11-23T18:49:47.497Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/adopcion-de-arboles:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-11-23T18:49:48.412Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/adopcion-de-arboles:testIamPermissions 200
+[debug] [2025-11-23T18:49:48.412Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/adopcion-de-arboles:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-11-23T18:49:48.413Z] Checked if tokens are valid: true, expires at: 1763927193368
+[debug] [2025-11-23T18:49:48.413Z] Checked if tokens are valid: true, expires at: 1763927193368
+[debug] [2025-11-23T18:49:48.413Z] Checked if tokens are valid: true, expires at: 1763927193368
+[debug] [2025-11-23T18:49:48.413Z] Checked if tokens are valid: true, expires at: 1763927193368
+[debug] [2025-11-23T18:49:48.414Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/adopcion-de-arboles/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-11-23T18:49:48.414Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/adopcion-de-arboles/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/adopcion-de-arboles
+[debug] [2025-11-23T18:49:48.415Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/adopcion-de-arboles/services/runtimeconfig.googleapis.com [none]
+[debug] [2025-11-23T18:49:48.415Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/adopcion-de-arboles/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/adopcion-de-arboles
+[debug] [2025-11-23T18:49:49.429Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/adopcion-de-arboles/services/runtimeconfig.googleapis.com 200
+[debug] [2025-11-23T18:49:49.429Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/adopcion-de-arboles/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2025-11-23T18:49:49.485Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/adopcion-de-arboles/services/cloudfunctions.googleapis.com 200
+[debug] [2025-11-23T18:49:49.485Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/adopcion-de-arboles/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2025-11-23T18:49:49.485Z] Checked if tokens are valid: true, expires at: 1763927193368
+[debug] [2025-11-23T18:49:49.485Z] Checked if tokens are valid: true, expires at: 1763927193368
+[debug] [2025-11-23T18:49:49.485Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/adopcion-de-arboles/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2025-11-23T18:49:49.485Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/adopcion-de-arboles/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/adopcion-de-arboles
+[debug] [2025-11-23T18:49:49.942Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/adopcion-de-arboles/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2025-11-23T18:49:49.943Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/adopcion-de-arboles/services/cloudfunctions.googleapis.com:enable [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
